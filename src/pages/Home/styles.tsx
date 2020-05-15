@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  height: 100%;
+`;
 
 export const Hero = styled.div`
+  margin-top: -4rem;
   background: linear-gradient(
     to right bottom,
     rgb(41, 46, 73),
@@ -43,7 +46,6 @@ export const Blob = styled.div`
 export const BlobSvg = styled.svg`
   right: -2rem;
   width: 35rem;
-  z-index: 1;
 
   @media (min-width: 1400px) {
     width: 40rem;
@@ -78,7 +80,6 @@ export const HeroContent = styled.div`
   }
 
   div {
-    z-index: 9;
   }
 `;
 
@@ -89,7 +90,7 @@ export const ImgHero = styled.div`
   object-fit: cover;
   width: 40rem;
   right: 3rem;
-  z-index: 2;
+  z-index: 1;
 
   @media (min-width: 1400px) {
     top: 2rem;
@@ -130,5 +131,4 @@ export const Main = styled.main`
   height: 500px;
   background: #333;
   margin-top: -1px;
-  z-index: 99;
 `;

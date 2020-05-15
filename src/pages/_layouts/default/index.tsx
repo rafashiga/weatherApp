@@ -1,9 +1,14 @@
 import React from 'react';
 import { Wrapper } from './styles';
-import HeroImg from '../../../assets/img/hero.svg';
+import Header from '../../../components/Header';
 
 const DefaultLayout: React.FC = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+  return (
+    <Wrapper>
+      <Header />
+      {children}
+    </Wrapper>
+  );
 };
 
 export default DefaultLayout;

@@ -14,7 +14,7 @@ import HeroImg from '../../assets/img/hero.svg';
 
 const Home: React.FC = () => {
   return (
-    <Wrapper>
+    <>
       <Hero>
         <HeroContent>
           <div>
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
         </WaveSvg>
       </Hero>
       <Main></Main>
-    </Wrapper>
+    </>
   );
 };
 
