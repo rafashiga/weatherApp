@@ -1,134 +1,76 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  height: 100%;
-`;
-
-export const Hero = styled.div`
-  margin-top: -4rem;
-  background: linear-gradient(
-    to right bottom,
-    rgb(41, 46, 73),
-    rgb(83, 105, 118)
-  );
-  position: relative;
-  color: #fff;
-  overflow: hidden;
-`;
-
-export const WaveSvg = styled.svg`
-  display: block;
-`;
-
-export const Blob = styled.div`
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 4rem;
-  width: 35rem;
-  object-fit: cover;
-
-  @media (min-width: 1400px) {
-    top: 0rem;
-    width: 40rem;
-  }
-
-  @media (max-width: 990px) {
-    right: -3rem;
-    width: 50%;
-  }
-
-  @media (max-width: 768px) {
-    width: 50%;
-  }
-`;
-
-export const BlobSvg = styled.svg`
-  right: -2rem;
-  width: 35rem;
-
-  @media (min-width: 1500px) {
-    width: 40rem;
-  }
-
-  @media (max-width: 990px) {
-    width: 29rem;
-  }
-`;
-
-export const HeroContent = styled.div`
-  height: 45vh;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 4rem;
-  display: flex;
-  align-items: center;
-
-  h1 {
-    font-size: 3rem;
-    font-weight: 100;
-
-    strong {
-      font-weight: 500;
-    }
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    text-transform: lowercase;
-    font-weight: 300;
-  }
-
-  div {
-  }
-`;
-
-export const ImgHero = styled.div`
-  position: absolute;
-  top: 4rem;
-  overflow: hidden;
-  object-fit: cover;
-  width: 40rem;
-  right: 3rem;
-  z-index: 1;
-
-  @media (min-width: 1500px) {
-    top: 5rem;
-    width: 50rem;
-  }
-
-  @media (max-width: 990px) {
-    width: 50%;
-    right: 0;
-  }
-
-  @media (max-width: 768px) {
-    width: 50%;
-  }
-
-  @media (max-width: 550px) {
-    visibility: hidden;
-    display: none;
-  }
-
-  img {
-    width: 40rem;
-    right: 3rem;
-
-    @media (min-width: 1400px) {
-      top: 2rem;
-      width: 50rem;
-    }
-
-    @media (max-width: 990px) {
-      width: 30rem;
-    }
-  }
-`;
-
 export const Main = styled.main`
   position: relative;
   height: 500px;
-  background: #333;
-  margin-top: -1px;
+  margin-top: -2px;
+  background: ${(props) => props.theme.colors.background};
+`;
+
+export const Information = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -5rem;
+  z-index: -1;
+  background: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;
+
+export const InformationContent = styled.div`
+  margin-top: 5rem;
+
+  h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #f5f5f5;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    color: #f5f5f5;
+  }
+`;
+
+export const InformationImage = styled.div`
+  position: relative;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    position: absolute;
+    width: 24rem;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    @media (max-width: 768px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: 1500px) {
+      width: 30rem;
+    }
+  }
+
+  img {
+    display: block;
+    text-align: center;
+    width: 24rem;
+    z-index: 9;
+
+    @media (min-width: 1500px) {
+      width: 30rem;
+    }
+  }
 `;
