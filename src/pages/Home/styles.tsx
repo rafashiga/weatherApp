@@ -29,7 +29,7 @@ export const Blob = styled.div`
   object-fit: cover;
 
   @media (min-width: 1400px) {
-    top: -2rem;
+    top: 0rem;
     width: 40rem;
   }
 
@@ -47,7 +47,7 @@ export const BlobSvg = styled.svg`
   right: -2rem;
   width: 35rem;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1500px) {
     width: 40rem;
   }
 
@@ -92,8 +92,8 @@ export const ImgHero = styled.div`
   right: 3rem;
   z-index: 1;
 
-  @media (min-width: 1400px) {
-    top: 2rem;
+  @media (min-width: 1500px) {
+    top: 5rem;
     width: 50rem;
   }
 

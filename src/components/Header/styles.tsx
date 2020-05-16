@@ -6,7 +6,7 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
 
   ul {
     z-index: 2;
@@ -35,6 +35,7 @@ export const Logo = styled.a`
   font-size: 2rem;
   margin-right: 2rem;
   z-index: 2;
+  display: flex;
 
   strong {
     font-weight: 500;
