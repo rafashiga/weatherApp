@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TiWeatherPartlySunny } from 'react-icons/ti';
 import { Navbar, Logo } from './styles';
 
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
 
       <ul>
         <li>
-          <a href="#">home</a>
+          <Link to="/">Home </Link>
         </li>
       </ul>
     </Navbar>

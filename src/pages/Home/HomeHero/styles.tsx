@@ -1,4 +1,6 @@
+import { darken } from 'polished';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   height: 100%;
@@ -79,6 +81,7 @@ export const HeroContent = styled.div`
     font-size: 1.4rem;
     text-transform: lowercase;
     font-weight: 300;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -91,14 +94,28 @@ export const ImgHero = styled.div`
   right: 3rem;
   z-index: 1;
 
+  img {
+    width: 40rem;
+    right: 3rem;
+  }
+
   @media (min-width: 1500px) {
     top: 5rem;
     width: 50rem;
+
+    img {
+      top: 2rem;
+      width: 50rem;
+    }
   }
 
   @media (max-width: 990px) {
     width: 50%;
     right: 0;
+
+    img {
+      width: 30rem;
+    }
   }
 
   @media (max-width: 768px) {
@@ -109,18 +126,26 @@ export const ImgHero = styled.div`
     visibility: hidden;
     display: none;
   }
+`;
 
-  img {
-    width: 40rem;
-    right: 3rem;
+export const ButtonLink = styled(Link)`
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
 
-    @media (min-width: 1400px) {
-      top: 2rem;
-      width: 50rem;
-    }
+  background: linear-gradient(
+    to right,
+    ${(props) => darken(0.1, props.theme.colors.secondary)},
+    ${(props) => darken(0.2, props.theme.colors.secondary)}
+  );
+  color: #fff;
+  transition: all 0.2s;
 
-    @media (max-width: 990px) {
-      width: 30rem;
-    }
+  &:hover {
+    background: linear-gradient(
+      to right,
+      ${(props) => darken(0.2, props.theme.colors.secondary)},
+      ${(props) => darken(0.3, props.theme.colors.secondary)}
+    );
   }
 `;

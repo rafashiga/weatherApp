@@ -14,7 +14,7 @@ export const Container = styled.footer`
   }
 
   a {
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.secondary};
     transition: opacity 0.2s;
 
     &:hover {

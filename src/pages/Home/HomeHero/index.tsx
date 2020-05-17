@@ -1,7 +1,15 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import Button from '../../../components/Button';
-import { Hero, HeroContent, WaveSvg, BlobSvg, Blob, ImgHero } from './styles';
+import {
+  Hero,
+  HeroContent,
+  WaveSvg,
+  BlobSvg,
+  Blob,
+  ImgHero,
+  ButtonLink,
+} from './styles';
 import HeroImg from '../../../assets/img/hero_alt.svg';
 
 const HomeHero: React.FC = () => {
@@ -16,7 +24,7 @@ const HomeHero: React.FC = () => {
           </h1>
           <h3>check today's weather forecast</h3>
           <br />
-          <Button>access</Button>
+          <ButtonLink to="/weather">check the weather </ButtonLink>
         </div>
       </HeroContent>
       <ImgHero>
