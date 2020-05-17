@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <h3>
         <TiWeatherPartlySunny size={64} color="#fff" />
         <br />
-        <strong>weather</strong>App
+        <strong>sky</strong>Weather
       </h3>
       <br />
       <p>

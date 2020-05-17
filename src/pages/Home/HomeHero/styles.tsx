@@ -70,7 +70,7 @@ export const HeroContent = styled.div`
 
   h1 {
     font-size: 3rem;
-    font-weight: 100;
+    font-weight: 300;
 
     strong {
       font-weight: 500;

@@ -10,7 +10,7 @@ export const Container = styled.footer`
 
   h3 {
     font-size: 1.75rem;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   a {

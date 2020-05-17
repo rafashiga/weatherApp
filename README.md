@@ -2,7 +2,7 @@
   :cloud:
   <br>
   <br>
-  weatherApp
+  skyWeather
 </h1>
 
 <h3 align="center">
@@ -24,7 +24,7 @@
   <img src="./src/assets/img/website.png">
   <br>
   <br>
-  <a href="https://weatherapp.netlify.app/" target="_blank">
+  <a href="https://lightsky.netlify.app/" target="_blank">
     <img src="./src/assets/img/button-visit.png">
   </a>
 </p>

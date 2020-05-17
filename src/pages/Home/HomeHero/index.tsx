@@ -20,7 +20,7 @@ const HomeHero: React.FC = () => {
       <HeroContent>
         <div>
           <h1>
-            <strong>weather</strong>App
+            <strong>sky</strong>Weather
           </h1>
           <h3>check today's weather forecast</h3>
           <br />
