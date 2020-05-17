@@ -52,8 +52,8 @@ export const InformationImage = styled.div`
     top: 0;
     z-index: 2;
 
-    @media (max-width: 400px) {
-      width: 14rem;
+    @media (max-width: 450px) {
+      width: 12rem;
     }
 
     @media (max-width: 768px) {
@@ -77,8 +77,9 @@ export const InformationImage = styled.div`
       width: 30rem;
     }
 
-    @media (max-width: 400px) {
-      width: 10rem;
+    @media (max-width: 450px) {
+      margin-top: 2rem;
+      width: 12rem;
     }
   }
 `;
