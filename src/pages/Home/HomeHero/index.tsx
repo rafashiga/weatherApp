@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import Button from '../../../components/Button';
 import {
   Hero,
   HeroContent,

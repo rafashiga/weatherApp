@@ -78,7 +78,7 @@ export const InformationImage = styled.div`
     }
 
     @media (max-width: 400px) {
-      width: 14rem;
+      width: 10rem;
     }
   }
 `;
