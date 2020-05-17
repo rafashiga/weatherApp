@@ -6,6 +6,7 @@ export const Container = styled.footer`
   padding: 2rem 0;
   background: #000;
   text-align: center;
+  color: #fff;
 
   h3 {
     font-size: 1.75rem;
@@ -13,7 +14,7 @@ export const Container = styled.footer`
   }
 
   a {
-    color: ${(props) => lighten(0.25, props.theme.colors.primary)};
+    color: ${(props) => props.theme.colors.primary};
     transition: opacity 0.2s;
 
     &:hover {

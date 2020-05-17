@@ -1,12 +1,12 @@
 export default {
   title: 'default',
   colors: {
-    primary: 'rgb(83, 105, 118)',
-    secondary: 'rgb(41, 46, 73)',
+    primary: 'rgb(101, 199, 247)',
+    secondary: 'rgb(0, 82, 212)',
     danger: '#ff0000',
     dark: '#1A1423',
     light: '#dfbbb1',
-    background: '#333',
-    text: '#fff',
+    background: '#f0f0f0',
+    text: '#444',
   },
 };

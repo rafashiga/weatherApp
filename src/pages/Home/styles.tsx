@@ -50,7 +50,7 @@ export const Form = styled.form`
   input {
     border: none;
     padding: 0.75rem 1rem;
-    color: #f0f0f0;
+    color: #333;
     background: ${(props) => darken(0.02, props.theme.colors.background)};
     margin: 0 0.5rem;
   }

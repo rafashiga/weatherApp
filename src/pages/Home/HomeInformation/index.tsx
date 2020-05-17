@@ -14,10 +14,10 @@ const HomeInfomation: React.FC = () => {
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="blobGradient2">
-              <stop offset="5%" stopColor={colors.background}></stop>
+              <stop offset="5%" stopColor={colors.primary}></stop>
               <stop
                 offset="95%"
-                stopColor={darken(0.1, colors.background)}></stop>
+                stopColor={darken(0.1, colors.secondary)}></stop>
             </linearGradient>
           </defs>
           <path
@@ -40,7 +40,7 @@ const HomeInfomation: React.FC = () => {
           dolor aliqua velit labore dolore excepteur amet ipsum incididunt
           culpa.
         </p>
-        <Button>more</Button>
+        <Button color="primary">more</Button>
       </InformationContent>
     </Information>
   );

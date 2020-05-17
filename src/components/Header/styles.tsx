@@ -24,10 +24,12 @@ export const Navbar = styled.nav`
 
     a {
       color: #fff;
+      font-weight: 500;
+
       transition: all 0.2s;
 
       &:hover {
-        color: ${darken(0.2, '#fff')};
+        color: ${darken(0.1, '#fff')};
       }
     }
   }

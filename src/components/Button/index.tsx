@@ -1,8 +1,13 @@
 import React from 'react';
 import { Btn } from './styles';
 
-const Button: React.FC = ({ children }) => {
-  return <Btn>{children}</Btn>;
+interface Props {
+  children: string;
+  color?: string;
+}
+
+const Button: React.FC<Props> = ({ children, color }) => {
+  return <Btn color={color}>{children}</Btn>;
 };
 
 export default Button;

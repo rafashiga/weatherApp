@@ -16,17 +16,20 @@ export const Information = styled.section`
 
 export const InformationContent = styled.div`
   margin-top: 5rem;
-  text-align: center;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 
   h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: #f5f5f5;
+    color: ${(props) => props.theme.colors.text};
   }
 
   p {
     margin-bottom: 2rem;
-    color: #f5f5f5;
+    color: ${(props) => props.theme.colors.text};
   }
 `;
 
@@ -39,7 +42,7 @@ export const InformationImage = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    margin-right: 2rem;
   }
 
   svg {
@@ -67,6 +70,7 @@ export const InformationImage = styled.div`
   img {
     text-align: center;
     width: 24rem;
+    margin-top: 4rem;
     z-index: 3;
 
     @media (min-width: 1500px) {
