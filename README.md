@@ -24,7 +24,7 @@
   <img src="./src/assets/img/website.png">
   <br>
   <br>
-  <a href="https://lightsky.netlify.app/" target="_blank">
+  <a href="https://skyweather.netlify.app/" target="_blank">
     <img src="./src/assets/img/button-visit.png">
   </a>
 </p>
