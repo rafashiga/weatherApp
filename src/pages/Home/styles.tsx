@@ -7,70 +7,24 @@ export const Main = styled.main`
   background: ${(props) => props.theme.colors.background};
 `;
 
-export const Information = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  margin-top: -5rem;
-  z-index: -1;
-  background: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-`;
-
-export const InformationContent = styled.div`
-  margin-top: 5rem;
-
-  h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: #f5f5f5;
-  }
-
-  p {
-    margin-bottom: 2rem;
-    color: #f5f5f5;
-  }
-`;
-
-export const InformationImage = styled.div`
+export const Newsletter = styled.section`
+  background: linear-gradient(
+    to top left,
+    ${(props) => props.theme.colors.secondary},
+    ${(props) => props.theme.colors.primary}
+  );
   position: relative;
-  text-align: center;
+  color: #fff;
+  overflow: hidden;
 
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  div {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -5rem;
+    margin-bottom: 10rem;
 
-  svg {
-    position: absolute;
-    width: 24rem;
-    left: 0;
-    top: 0;
-    z-index: 2;
-
-    @media (max-width: 768px) {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    @media (min-width: 1500px) {
-      width: 30rem;
-    }
-  }
-
-  img {
-    display: block;
-    text-align: center;
-    width: 24rem;
-    z-index: 9;
-
-    @media (min-width: 1500px) {
-      width: 30rem;
+    h3 {
+      font-size: 1.75rem;
     }
   }
 `;
