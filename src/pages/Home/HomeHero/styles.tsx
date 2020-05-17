@@ -28,6 +28,7 @@ export const Blob = styled.div`
   right: 4rem;
   width: 35rem;
   object-fit: cover;
+  z-index: -2;
 
   @media (min-width: 1400px) {
     top: 0rem;

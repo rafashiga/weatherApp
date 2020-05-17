@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Information = styled.section`
   width: 80%;
   margin: 0 auto;
-  margin-top: -5rem;
-  z-index: -1;
   background: none;
+  padding: 1rem 0;
 
   @media (min-width: 768px) {
+    margin-top: -5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,6 +16,7 @@ export const Information = styled.section`
 
 export const InformationContent = styled.div`
   margin-top: 5rem;
+  text-align: center;
 
   h3 {
     font-size: 1.75rem;
@@ -32,11 +33,13 @@ export const InformationContent = styled.div`
 export const InformationImage = styled.div`
   position: relative;
   text-align: center;
+  z-index: 1;
 
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: justify;
   }
 
   svg {
@@ -46,7 +49,12 @@ export const InformationImage = styled.div`
     top: 0;
     z-index: 2;
 
+    @media (max-width: 400px) {
+      width: 14rem;
+    }
+
     @media (max-width: 768px) {
+      z-index: -2;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -57,13 +65,16 @@ export const InformationImage = styled.div`
   }
 
   img {
-    display: block;
     text-align: center;
     width: 24rem;
-    z-index: 9;
+    z-index: 3;
 
     @media (min-width: 1500px) {
       width: 30rem;
+    }
+
+    @media (max-width: 400px) {
+      width: 14rem;
     }
   }
 `;
