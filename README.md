@@ -43,6 +43,7 @@
 - [Yup](https://github.com/jquense/yup)
 - [OpenWeather API](https://openweathermap.org/api)
 - [Polished](https://github.com/styled-components/polished)
+- [unDraw](https://undraw.co/)
 
 ## :information_source: How to use
 
