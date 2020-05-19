@@ -34,10 +34,15 @@
 - [ReactJS](https://pt-br.reactjs.org/)
 - Typescript
 - [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
-- [Axios](https://github.com/axios/axios)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [React toastify](https://github.com/fkhadra/react-toastify)
+- [React loading](https://github.com/fakiolinho/react-loading)
+- [React moment](https://github.com/headzoo/react-moment)
+- [Axios](https://github.com/axios/axios)
 - [Styled components](https://styled-components.com/)
 - [Yup](https://github.com/jquense/yup)
+- [OpenWeather API](https://openweathermap.org/api)
+- [Polished](https://github.com/styled-components/polished)
 
 ## :information_source: How to use
 
