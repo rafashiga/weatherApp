@@ -5,7 +5,7 @@ export default {
     secondary: 'rgb(0, 82, 212)',
     danger: '#ff0000',
     dark: '#1A1423',
-    light: '#dfbbb1',
+    light: '#f0f0f0',
     background: '#f0f0f0',
     text: '#444',
   },

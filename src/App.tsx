@@ -1,4 +1,5 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 import { Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import DefaultLayout from './pages/_layouts/default';
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <DefaultLayout>
           <GlobalStyle />
           <Routes />
+          <ToastContainer autoClose={3000} />
         </DefaultLayout>
       </ThemeProvider>
     </Router>
